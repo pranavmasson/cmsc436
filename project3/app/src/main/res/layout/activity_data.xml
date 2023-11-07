@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:padding="10dp"
+            android:text="Good Morning"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gm"
+            android:padding="10dp"
+            android:text="row 2"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:padding="10dp"
+            android:text="Please"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/please"
+            android:padding="10dp"
+            android:text="row 4"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter $ Amount"
+            android:padding="10dp"
+            android:textSize="24sp"
+            />
+        <TextView
+            android:text=" "
+            android:id="@+id/amountText"
+            android:padding="10dp"
+            android:textSize="24sp"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:padding="10dp"
+            android:text="Need Visa?"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/visa"
+            android:padding="10dp"
+            android:text="no"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/update"
+            android:background="#FF0"
+            android:text="Update"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.619"
+            android:onClick="calculateTotal"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/back"
+            android:background="#FF0"
+            android:text="Go Back"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.619"
+            android:onClick="backScreen"
+            />
+    </TableRow>
+
+</TableLayout>
